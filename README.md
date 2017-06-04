@@ -1,4 +1,4 @@
-PolyGEN is a HTML canvas JavaScript library for generating polygons on a canvas.
+PolyGEN is an HTML canvas JavaScript library for generating polygons on a canvas.
 
 # Get started
 
@@ -29,4 +29,4 @@ PolyGen.create(5);
 
 # About
 
-This library was made by Cameron Samuels, inspired by [Ludum Dare 35](http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=91735) when I desperately needed to generate a polygon with any amount of sides.
+This library was made by Cameron Samuels, inspired by [Ludum Dare 35](http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=91735) when desperately needing to generate a polygon with any amount of sides.
