@@ -19,8 +19,8 @@ PolyGen.context = PolyGen.canvas.getContext('2d');
 PolyGen.thickness = 8;
 //Declare the color of the lines - it can be in any CSS color form (hex, rgb, rgba, name, etc)
 PolyGen.color ='#2a2a2a';
-//Declare the size of the shape - best if it's 1/10 of the canvas height and width
-PolyGen.size = 409.6;
+//Declare the size of the shape - the radius
+PolyGen.size = 2048;
 //Create the shape by calling this function - replace 5 with the number of sides
 PolyGen.create(5);
 ```
