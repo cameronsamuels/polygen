@@ -25,8 +25,8 @@ PolyGen.size = 409.6;
 PolyGen.create(5);
 ```
 
-*Be aware of the **[license](LICENSE)** to PolyGEN as shown in the license file.*
+*Be aware of the **[license](LICENSE)** for PolyGEN as shown in the license file.*
 
 # About
 
-This library was made by Cameron Samuels, inspired by [Ludum Dare 35](http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=91735) when I despreately needed to generate a polygon with any amount of sides.
+This library was made by Cameron Samuels, inspired by [Ludum Dare 35](http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=91735) when I desperately needed to generate a polygon with any amount of sides.
