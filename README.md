@@ -2,12 +2,12 @@ PolyGEN is an HTML canvas JavaScript library for generating polygons on a canvas
 
 # Get started
 
-First download [polygen.js](polygen.js) to your code folder. Then use this code relatively in your app:
+First download [polygen.js](polygen.js) (or better yet, use [polygen.min.js](polygen.min.js)) to your code folder. Then use this code relatively in your app:
 
 ### HTML
 ```html
 <canvas id="canvas" width="4096" height="4096"></canvas>
-<script src="polygen.js"></script>
+<script src="polygen.min.js"></script>
 ```
 ### JavaScript
 ```javascript
@@ -25,7 +25,7 @@ PolyGen.size = 409.6;
 PolyGen.create(5);
 ```
 
-*Be aware of the **[license](LICENSE)** for PolyGEN as shown in the license file.*
+*Be aware of the **[license](LICENSE)** for PolyGEN*
 
 # About
 
