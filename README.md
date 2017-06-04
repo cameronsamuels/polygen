@@ -11,17 +11,17 @@ First download [polygen.js](polygen.js) to your code folder. Then use this code 
 ```
 ### JavaScript
 ```javascript
-//Canvas element
+//Declare canvas element
 PolyGen.canvas = document.getElementById('canvas');
-//Canvas context
+//Declare canvas context of the canvas element
 PolyGen.context = PolyGen.canvas.getContext('2d');
-//Thickness of the lines (the shape's sides)
+//Declare the thickness of the lines of the shape
 PolyGen.thickness = 8;
-//Color of lines - it can be in any CSS color form (hex, rgb, rgba, name, etc)
+//Declare the color of the lines - it can be in any CSS color form (hex, rgb, rgba, name, etc)
 PolyGen.color ='#2a2a2a';
-//Size of shape - best if its 1/10 of the canvas height/width
+//Declare the size of the shape - best if it's 1/10 of the canvas height and width
 PolyGen.size = 409.6;
-//Create by calling this function - replace 5 with the number of sides
+//Create the shape by calling this function - replace 5 with the number of sides
 PolyGen.create(5);
 ```
 
