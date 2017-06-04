@@ -257,7 +257,7 @@ header h2 { width: 540px; margin-top: 0; margin-bottom: 0; font-size: 26px; font
 .inner { position: relative; width: 940px; margin: 0 auto; }
 
 #content-wrapper { padding-top: 30px; border-top: solid 1px #fff; }
-#main-content { float: left; width: 690px; }
+#main-content { float: left; width: 100%; }
 
 #main-content img { max-width: 100%; }
 
