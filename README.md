@@ -6,13 +6,13 @@ First download [polygen.js](polygen.js) (or better yet, use [polygen.min.js](pol
 
 ### HTML
 ```html
-<canvas id="canvas" width="4096" height="4096"></canvas>
+<canvas width="4096" height="4096"></canvas>
 <script src="polygen.min.js"></script>
 ```
 ### JavaScript
 ```javascript
 //Declare canvas element
-PolyGen.canvas = document.getElementById('canvas');
+PolyGen.canvas = document.querySelector('canvas');
 //Declare canvas context of the canvas element
 PolyGen.context = PolyGen.canvas.getContext('2d');
 //Declare the thickness of the lines of the shape
