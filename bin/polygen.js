@@ -1,4 +1,4 @@
-var PolyGen = {rotate:0,color:"#000",thickness:8};
+var PolyGen = {rotate:0,color:"#000",thickness:8,coords:{}};
 PolyGen.create = function(s) {
 	var c = PolyGen.context || PolyGen.canvas.getContext('2d');
 	c.rotate(PolyGen.rotate);
