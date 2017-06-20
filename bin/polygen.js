@@ -1,7 +1,7 @@
-var PolyGen = {rotate:0,color:"#000",thickness:8,coords:{}};
+var PolyGen = {rotation:0,color:"#000",thickness:8,coords:{}};
 PolyGen.create = function(s) {
 	var c = PolyGen.context || PolyGen.canvas.getContext('2d');
-	c.rotate(PolyGen.rotate);
+	c.rotate(PolyGen.rotation);
 	var sz = PolyGen.size || Math.min(PolyGen.canvas.width/2,PolyGen.canvas.height/2),
 	x = PolyGen.coords.x || (PolyGen.canvas.width / 2), y = PolyGen.coords.y || (PolyGen.canvas.height / 2);
 	c.beginPath();
