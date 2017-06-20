@@ -19,6 +19,17 @@ PolyGen.clear = function() {
 PolyGen.setContext = function(e) {
 	PolyGen.context = PolyGen.canvas.getContext(e||"2d");
 };
+PolyGen.reset = function() {
+	delete PolyGen.coords.x;
+	delete PolyGen.coords.y;
+	delete PolyGen.size;
+	delete PolyGen.color;
+	delete PolyGen.rotation;
+	delete PolyGen.sides;
+	delete PolyGen.canvas;
+	delete PolyGen.context;
+	delete PolyGen.thickness;
+}
 PolyGen.rotate = function(r) {
 	if (PolyGen.canvas) var cv = PolyGen.canvas
 	else return;
