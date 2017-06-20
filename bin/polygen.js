@@ -32,7 +32,7 @@ PolyGen.rotate = function(r) {
 	// draw the signature
 	// since images draw from top-left offset the draw by 1/2 width & height
 // 	c.drawImage(img, -img.width / 2, -img.height / 2);
-	PolyGen.sides = PolyGen.sides || 5;
+	s = PolyGen.sides || 5;
 	var sz = PolyGen.size || Math.min(cv.width/2,cv.height/2),
 	x = -PolyGen.coords.x || (-cv.width / 2), y = -PolyGen.coords.y || (-cv.height / 2);
 	c.beginPath();
