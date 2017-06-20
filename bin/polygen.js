@@ -30,6 +30,16 @@ PolyGen.rotate = function(r) {
 	// draw the signature
 	// since images draw from top-left offset the draw by 1/2 width & height
 // 	ctx.drawImage(img, -img.width / 2, -img.height / 2);
+	PolyGen.sides = PolyGen.sides || 5;
+	var sz = PolyGen.size || Math.min(cv.width/2,cv.height/2),
+	x = -PolyGen.coords.x || (-cv.width / 2), y = -PolyGen.coords.y || (-cv.height / 2);
+	c.beginPath();
+	c.moveTo (x +  sz * Math.cos(0), y +  sz *  Math.sin(0));          
+	for (var i = 1; i <= s;i += 1) c.lineTo(x + sz * Math.cos(i * 2 * Math.PI / s), y + sz * Math.sin(i * 2 * Math.PI / s));
+  	c.strokeStyle = PolyGen.color || "#000";
+	c.lineWidth = PolyGen.thickness || 8;
+	c.stroke();
+	PolyGen.context = c;
 	// un-rotate the canvas by -90% (== -Math.PI/2)
 	ctx.rotate(-PolyGen.rotation);
 	// un-translate the canvas back to origin==top-left canvas
