@@ -24,14 +24,14 @@ PolyGen.rotate = function(r) {
 	cv.width = cv.height, cv.height = width;
 	// translate to center-canvas 
     	// the origin [0,0] is now center-canvas
-    	ctx.translate(cv.width / 2, cv.height / 2);
+    	c.translate(cv.width / 2, cv.height / 2);
 	// roate the canvas by +90% (==Math.PI/2)
 	PolyGen.rotation = PolyGen.rotation || 0;
 	PolyGen.rotation += r;
-	ctx.rotate(PolyGen.rotation);
+	c.rotate(PolyGen.rotation);
 	// draw the signature
 	// since images draw from top-left offset the draw by 1/2 width & height
-// 	ctx.drawImage(img, -img.width / 2, -img.height / 2);
+// 	c.drawImage(img, -img.width / 2, -img.height / 2);
 	PolyGen.sides = PolyGen.sides || 5;
 	var sz = PolyGen.size || Math.min(cv.width/2,cv.height/2),
 	x = -PolyGen.coords.x || (-cv.width / 2), y = -PolyGen.coords.y || (-cv.height / 2);
@@ -43,7 +43,7 @@ PolyGen.rotate = function(r) {
 	c.stroke();
 	PolyGen.context = c;
 	// un-rotate the canvas by -90% (== -Math.PI/2)
-	ctx.rotate(-PolyGen.rotation);
+	c.rotate(-PolyGen.rotation);
 	// un-translate the canvas back to origin==top-left canvas
-	ctx.translate(-cv.width / 2, -cv.height / 2);
+	c.translate(-cv.width / 2, -cv.height / 2);
 }
