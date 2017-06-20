@@ -34,7 +34,7 @@ PolyGen.rotate = function(r) {
 // 	c.drawImage(img, -img.width / 2, -img.height / 2);
 	s = PolyGen.sides || 5;
 	var sz = PolyGen.size || Math.min(cv.width/2,cv.height/2),
-	x = -PolyGen.coords.x || (-cv.width / 4), y = -PolyGen.coords.y || (-cv.height / 4);
+	x = -PolyGen.coords.x || (-cv.width / 8), y = -PolyGen.coords.y || (-cv.height / 8);
 	c.beginPath();
 	c.moveTo (x +  sz * Math.cos(0), y +  sz *  Math.sin(0));          
 	for (var i = 1; i <= s;i += 1) c.lineTo(x + sz * Math.cos(i * 2 * Math.PI / s), y + sz * Math.sin(i * 2 * Math.PI / s));
