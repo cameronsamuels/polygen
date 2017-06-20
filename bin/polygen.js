@@ -13,6 +13,17 @@ PolyGen.create = function(s) {
 	c.stroke();
 	PolyGen.context = c;
 };
+PolyGen.draw = function(c,a,m,e,r,o,n,s) {
+	c = c || 5; if (!a) return; if (!m) m = a.getContext('2d');
+	if (!e) e = Math.min(a.width, a.height);
+	if (!n) n =  a.width / 2; if (!s) s = a.height / 2;
+	m.beginPath();
+	m.moveTo (n +  e * Math.cos(0), s +  e *  Math.sin(0));          
+	for (i = 1; i <= c;i += 1) m.lineTo(n + e * Math.cos(i * 2 * Math.PI / c), s + e * Math.sin(i * 2 * Math.PI / c));
+  	m.strokeStyle = o || "#000";
+	m.lineWidth = r || 8;
+	m.stroke();
+};
 PolyGen.clear = function() {
 	PolyGen.context.clearRect(0, 0, PolyGen.canvas.width, PolyGen.canvas.height);	
 };
