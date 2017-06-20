@@ -16,6 +16,9 @@ PolyGen.create = function(s) {
 PolyGen.clear = function() {
 	PolyGen.context.clearRect(0, 0, PolyGen.canvas.width, PolyGen.canvas.height);	
 };
+PolyGen.setContext = function(e) {
+	PolyGen.context = PolyGen.canvas.getContext(e||"2d");
+};
 PolyGen.rotate = function(r) {
 	if (PolyGen.canvas) var cv = PolyGen.canvas
 	else return;
