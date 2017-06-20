@@ -17,7 +17,8 @@ PolyGen.clear = function() {
 	PolyGen.context.clearRect(0, 0, PolyGen.canvas.width, PolyGen.canvas.height);	
 };
 PolyGen.rotate = function(r) {
-	var cv = PolyGen.canvas || return, c = PolyGen.context || cv.getContext('2d');
+	var cv = PolyGen.canvas || return;
+	c = PolyGen.context || cv.getContext('2d');
 	var width = cv.width;
 	cv.width = cv.height, cv.height = width;
 	// translate to center-canvas 
