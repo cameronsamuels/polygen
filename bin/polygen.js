@@ -24,12 +24,9 @@ PolyGen.draw = function(c,a,m,e,r,o,n,s) {
 	m.lineWidth = r || 8;
 	m.stroke();
 };
-PolyGen.clear = function() {
-	PolyGen.context.clearRect(0, 0, PolyGen.canvas.width, PolyGen.canvas.height);	
-};
-PolyGen.setContext = function(e) {
-	PolyGen.context = PolyGen.canvas.getContext(e||"2d");
-};
+PolyGen.clear = function() { PolyGen.context.clearRect(0, 0, PolyGen.canvas.width, PolyGen.canvas.height) },
+PolyGen.setContext = function(e) { PolyGen.context = PolyGen.canvas.getContext(e||"2d") },
+PolyGen.getContext = function(e) { return PolyGen.canvas.getContext(e||"2d") };
 PolyGen.reset = function() {
 	delete PolyGen.coords.x;
 	delete PolyGen.coords.y;
