@@ -25,7 +25,7 @@ PolyGen.size = 2048;
 PolyGen.create(5);
 ```
 
-If you want to clear the canvas, you can easily do that using `PolyGen.clear()`
+More methods and properties are available in the [documentation](http://github.com/CameronSamuels/polygen/wiki).
 
 *Be aware of the **[license](LICENSE)** for PolyGEN*
 
