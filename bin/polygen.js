@@ -13,7 +13,7 @@ PolyGen.create = function(s) {
 	c.stroke();
 	PolyGen.context = c;
 };
-PolyGen.draw = function(c,a,m,e,r,o,n,s) {
+PolyGen.draw = function(c,a,m,e,r,o,n,s) { //experimental
 	c = c || 5; if (!a) return; if (!m) m = a.getContext('2d');
 	if (!e) e = Math.min(a.width, a.height);
 	if (!n) n =  a.width / 2; if (!s) s = a.height / 2;
