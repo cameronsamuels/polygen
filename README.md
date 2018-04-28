@@ -1,12 +1,14 @@
-PolyGEN is an HTML canvas JavaScript library for generating polygons on a canvas.
+PolyGEN is a JavaScript library for generating polygons on an HTML5 canvas.
+It easily allows for developers to draw a polygon with a specified number of sides.
 
-# Get started
-First download [bin/polygen.js](bin/polygen.js) to your code folder. Then use this code relatively in your app:
+## Getting started
+Download the [bin/polygen.js](bin/polygen.js) file to your workspace.
+Then use this code relatively in your code:
 
 ### HTML
 ```html
-<canvas width="4096" height="4096"></canvas>
-<script src="bin/polygen.min.js"></script>
+<canvas width="2048" height="2048"></canvas>
+<script src="polygen.js"></script>
 ```
 
 ### JavaScript
@@ -16,11 +18,11 @@ PolyGen.canvas = document.querySelector('canvas');
 //Declare canvas context of the canvas element
 PolyGen.context = PolyGen.canvas.getContext('2d');
 //Declare the thickness of the lines of the shape
-PolyGen.thickness = 8;
+PolyGen.thickness = 4;
 //Declare the color of the lines - it can be in any CSS color form (hex, rgb, rgba, name, etc)
-PolyGen.color ='#2a2a2a';
+PolyGen.color ='#222';
 //Declare the size of the shape - the radius
-PolyGen.size = 2048;
+PolyGen.size = 1024;
 //Create the shape by calling this function - replace 5 with the number of sides
 PolyGen.create(5);
 ```
