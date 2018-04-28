@@ -2,7 +2,7 @@ PolyGEN is a JavaScript library for generating polygons on an HTML5 canvas.
 It easily allows for developers to draw a polygon with a specified number of sides.
 
 ## Getting started
-Download the [bin/polygen.js](bin/polygen.js) file to your workspace.
+Download the [bin/polygen.js](https://git.io/vp4HZ) file to your workspace.
 Then use this code relatively in your code:
 
 ### HTML
