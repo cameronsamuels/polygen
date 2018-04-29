@@ -18,4 +18,4 @@ Then use this code relatively in your code:
 PolyGen(3, document.querySelector("canvas"), 0, 1000, 8, "#222", 0, 0);
 ```
 
-*Be aware of the **[license](LICENSE)** for PolyGEN*
+*Be aware of the **[license](https://git.io/vpBcx)** for PolyGEN*
