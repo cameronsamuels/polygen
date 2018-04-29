@@ -4,7 +4,7 @@
 // n = shape x position , s = shape y position
 var PolyGen = function(c,a,m,e,r,o,n,s) {
 	c = c || 4; // sides
-	if (!a) return; // canvas
+	if (!a && !m) return; // canvas
 	if (!m) m = a.getContext("2d"); // context
 	if (!e) e = Math.min(a.width, a.height) / 2; // radius
 	m.lineWidth = r || 8; // thickness
